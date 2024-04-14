@@ -1,0 +1,95 @@
+/* Unique ID: 123456789 */
+body {
+    background-color: gray;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+/* Center everything on the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Needed for absolute positioning of the name */
+}
+
+/* CSS styles for the control buttons */
+.control-buttons {
+    margin-bottom: 20px;
+}
+
+.control-buttons button {
+    padding: 15px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* CSS styles for the 'on' and 'off' buttons */
+.on {
+    background-color: green;
+    color: white;
+}
+
+.off {
+    background-color: red;
+    color: white;
+}
+
+/* CSS styles for the tank */
+.tank {
+    position: relative;
+    width: 120px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border: 2px solid black; /* Tank border */
+    text-align: center; /* Center text */
+    line-height: 200px; /* Set line height equal to tank height */
+}
+
+/* CSS styles for the percentage */
+#percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+}
+
+/* CSS styles for the distance label */
+.distance-label {
+    margin-bottom: 20px;
+}
+
+.distance-label label {
+    font-weight: bold;
+}
+
+.distance-label span {
+    font-size: 18px;
+    color: #333; /* Set text color to dark gray */
+}
+
+/* CSS styles for the unique ID display */
+.unique-id {
+    margin-bottom: 20px;
+}
+
+.unique-id label {
+    font-weight: bold;
+}
+
+.unique-id span {
+    font-size: 18px;
+    color: #333; /* Set text color to dark gray */
+}
+
+/* CSS styles for your name */
+.name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}

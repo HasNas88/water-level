@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP8266 Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ESP8266 Control Panel</h1>
+        
+        <!-- Control Buttons -->
+        <div class="control-buttons">
+            <button id="pumpButton" class="off">Pump</button>
+            <button id="sensorButton" class="off">Sensor</button>
+        </div>
+
+        <!-- Water Tank -->
+        <div class="tank">
+            <div class="body"></div>
+            <div class="top"></div>
+            <div class="treads">
+                <div class="track left-track"></div>
+                <div class="track right-track"></div>
+            </div>
+            <span id="percentage">0%</span> <!-- Percentage -->
+        </div>
+
+        <!-- Distance Label -->
+        <div class="distance-label">
+            <label for="distance">Distance:</label>
+            <span id="distance">-- cm</span>
+        </div>
+
+        <!-- Unique ID Display -->
+        <div class="unique-id">
+            <label>Unique ID:</label>
+            <span id="uniqueID">Loading...</span>
+        </div>
+
+        <!-- Your Name -->
+        <div class="name">HSN</div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
